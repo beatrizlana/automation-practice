@@ -1,3 +1,4 @@
+@compare_feature
 Feature: Compare products
 
 - As a customer, I want to compare products to better decide among them

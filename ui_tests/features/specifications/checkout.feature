@@ -1,3 +1,4 @@
+@checkout_feature
 Feature: Signup and Checkout
 
 - As a customer, I want to proceed to Checkout
@@ -7,16 +8,14 @@ Scenario: Fill in required information successfully
 Given my cart is not empty
 And I did not sign up
 And I proceeded to checkout
-When I fill in <first name>, <last name>, <email>, <password>,
-    <address>, <city>, <state>, <zip code>, <country> and <mobile phone> correctly
+When I fill in <first name>, <last name>, <email>, <password>, <address>, <city>, <state>, <zip code>, <country> and <mobile phone> correctly
 Then I proceed to next step
 
 Scenario: Fill in required information with invalid data
 Given my cart is not empty
 And I did not sign up
 And I proceeded to checkout
-When I fill in <first name>, <last name>, <email>, <password>,
-    <address>, <city>, <state>, <zip code>, <country> and <mobile phone> with invalid data
+When I fill in <first name>, <last name>, <email>, <password>, <address>, <city>, <state>, <zip code>, <country> and <mobile phone> with invalid data
 Then I get an error <error invalid data>
 
 Scenario: Try to sign in with an invalid email

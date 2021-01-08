@@ -1,3 +1,4 @@
+@cart_feature
 Feature: Cart
 
 - As a customer, I want to manage my cart before checkout
